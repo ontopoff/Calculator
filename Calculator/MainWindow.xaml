@@ -56,26 +56,26 @@
         <Button Grid.Column="3" Grid.Row="2" Content="/" Style="{StaticResource test}" FontSize="36" FontFamily="Bahnschrift Condensed" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
         <Button Grid.Column="4" Grid.Row="2" Content="Backspace" Style="{StaticResource test}" FontSize="14" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,12,10,10"/>
 
-        <Button Grid.Column="0" Grid.Row="3" Content="1" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
-        <Button Grid.Column="1" Grid.Row="3" Content="2" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
-        <Button Grid.Column="2" Grid.Row="3" Content="3" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
-        <Button Grid.Column="3" Grid.Row="3" Content="4" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="0" Grid.Row="3" Content="1" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
+        <Button Grid.Column="1" Grid.Row="3" Content="2" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
+        <Button Grid.Column="2" Grid.Row="3" Content="3" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,10,10"/>
+        <Button Grid.Column="3" Grid.Row="3" Content="4" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
         <Button Grid.Column="4" Grid.Row="3" Grid.RowSpan="2" Content="=" Style="{StaticResource test1}" FontSize="36" FontFamily="Comic Sans MS" Foreground="White" RenderTransformOrigin="0.5,1" Margin="10,10,12,10" Background="#FF53931B"/>
 
-        <Button Grid.Column="0" Grid.Row="4" Content="5" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="1" Grid.Row="4" Content="6" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="2" Grid.Row="4" Content="7" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="3" Grid.Row="4" Content="8" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="0" Grid.Row="4" Content="5" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="1" Grid.Row="4" Content="6" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="7" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="3" Grid.Row="4" Content="8" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
 
-        <Button Grid.Column="0" Grid.Row="5" Content="9" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="1" Grid.Row="5" Content="A" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="2" Grid.Row="5" Content="B" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="3" Grid.Row="5" Content="C" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="4" Grid.Row="5" Content="D" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="0" Grid.Row="5" Content="9" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="A" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="2" Grid.Row="5" Content="B" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="3" Grid.Row="5" Content="C" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="4" Grid.Row="5" Content="D" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
 
         <Button Grid.Column="0" Grid.Row="6" Content="," Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
         <Button Grid.Column="1" Grid.Row="6" Content="(" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
-        <Button Grid.Column="2" Grid.Row="6" Content="0" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
+        <Button Grid.Column="2" Grid.Row="6" Content="0" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF565656" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
         <Button Grid.Column="3" Grid.Row="6" Content=")" Style="{StaticResource test}" FontSize="36" FontFamily="Comic Sans MS" Foreground="#FF53931B" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
         <Button Grid.Column="4" Grid.Row="6" Content="Clear" Style="{StaticResource test}" FontSize="24" FontFamily="Comic Sans MS" Foreground="#FFE8684D" RenderTransformOrigin="0.5,1" Margin="10,10,12,10"/>
     </Grid>
