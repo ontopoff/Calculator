@@ -49,9 +49,9 @@ namespace Calculator
                 input.Text = "";
                 result.Text = "";
             }
-            // Получаем текст кнопки
+
             string str = (string)((Button)e.OriginalSource).Content;
-            // Добавляем его в текстовое поле
+
             if (str == "=")
             {
                 if (inputText.Length != 0 && !bad_standart_operators.Contains(inputText[inputText.Length - 1]))
@@ -72,11 +72,60 @@ namespace Calculator
             }
             else
             {
-                if(operators.Contains(str) && operators.Contains(Convert.ToString(inputText[inputText.Length - 1])))
+                if(operators.Contains(str))
                 {
-                    inputText = inputText.Remove(inputText.Length - 1, 1);
-                    inputText += str;
-                    input.Text = inputText;
+                    if(str != "-")
+                    {
+                        if (inputText.Length == 0 || inputText[inputText.Length - 1] == '(')
+                        {
+                            str = "";
+                        }
+                        else
+                        {
+                            if (operators.Contains(Convert.ToString(inputText[inputText.Length - 1])))
+                            {
+                                char tmp = inputText[inputText.Length - 1];
+                                inputText = inputText.Remove(inputText.Length - 1, 1);
+                                if (inputText.Length != 0 && inputText[inputText.Length - 1] != '(')
+                                {
+                                    inputText += str;
+                                    input.Text = inputText;
+                                } else
+                                {
+                                    inputText += Convert.ToString(tmp);
+                                }   
+                            }
+                            else
+                            {
+                                inputText += str;
+                                input.Text += str;
+                            }
+                        }
+                    } else
+                    {
+                        if(inputText.Length == 0)
+                        {
+                            inputText += "0"+str;
+                            input.Text += str;
+                        } else if (operators.Contains(Convert.ToString(inputText[inputText.Length - 1])))
+                        {
+                            inputText = inputText.Remove(inputText.Length - 1, 1);
+                            inputText += str;
+                            input.Text = inputText;
+                        }
+                        else
+                        {
+                            if (inputText[inputText.Length - 1] == '(')
+                            {
+                                inputText += "0"+str;
+                                input.Text += str;
+                            } else
+                            {
+                                inputText += str;
+                                input.Text += str;
+                            }        
+                        }
+                    }
                 } else
                 {
                     if(str == "(")
@@ -119,8 +168,22 @@ namespace Calculator
                             }
                         } else
                         {
-                            inputText += str;
-                            input.Text += str;
+                            if(str == ",")
+                            {
+                                if(inputText.Length == 0 || bad_standart_operators.Contains(inputText[inputText.Length - 1]) || inputText[inputText.Length - 1] == ')')
+                                {
+                                    inputText += "0,";
+                                    input.Text += "0,";
+                                } else
+                                {
+                                    inputText += str;
+                                    input.Text += str;
+                                } 
+                            } else
+                            {
+                                inputText += str;
+                                input.Text += str;
+                            }       
                         }   
                     }  
                 }

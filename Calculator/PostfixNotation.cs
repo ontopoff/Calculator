@@ -256,14 +256,8 @@ namespace Calculator
                             case "-":
                                 {
                                     double a = Convert.ToDouble(Math.Round(converterToDec(14, stack.Pop()), 5));
-                                    if(stack.Count == 0)
-                                    {
-                                        summ = converterBack(14, -a);
-                                    } else
-                                    {
-                                        double b = Convert.ToDouble(Math.Round(converterToDec(14, stack.Pop()), 5));
-                                        summ = converterBack(14, b - a);
-                                    }
+                                    double b = Convert.ToDouble(Math.Round(converterToDec(14, stack.Pop()), 5));
+                                    summ = converterBack(14, b - a);
                                     break;
                                 }
                             case "*":
@@ -277,7 +271,13 @@ namespace Calculator
                                 {
                                     double a = Convert.ToDouble(Math.Round(converterToDec(14, stack.Pop()), 5));
                                     double b = Convert.ToDouble(Math.Round(converterToDec(14, stack.Pop()), 5));
-                                    summ = converterBack(14, b / a);
+                                    if (a == 0)
+                                    {
+                                        summ = "Деление на 0 запрещено!";
+                                    } else
+                                    {
+                                        summ = converterBack(14, b / a);
+                                    }
                                     break;
                                 }
                         }
